@@ -31,7 +31,7 @@ export default function Home() {
                 />
               </div>
               <figcaption className="text-xs text-white/60">
-                Mini-study: This photo of Joseph and his kayak was compressed into a small web-friendly webp using the magick command line tool. It's delivered via the recommended next/image component, which handles optimization, responiveness, lazy loading and CDN caching automatically. 
+                Mini-study: This photo of Joseph and his kayak was compressed into a small web-friendly webp using the magick command line tool. It&apos;s delivered via the recommended next/image component, which handles optimization, responiveness, lazy loading and CDN caching automatically. 
               </figcaption>
             </figure>
           </div>
