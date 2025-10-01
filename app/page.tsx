@@ -20,15 +20,20 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center md:justify-end">
-            <div className="relative w-full max-w-sm overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl shadow-black/50">
-              <Image
-                src={kayakPhoto}
-                alt="Joseph Malicke kayaking"
-                priority
-                sizes="(min-width: 768px) 400px, 80vw"
-                className="h-full w-full object-cover"
-              />
-            </div>
+            <figure className="flex w-full max-w-sm flex-col items-center gap-3 text-center md:items-end md:text-left">
+              <div className="relative w-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl shadow-black/50">
+                <Image
+                  src={kayakPhoto}
+                  alt="Joseph Malicke kayaking"
+                  priority
+                  sizes="(min-width: 768px) 400px, 80vw"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <figcaption className="text-xs text-white/60">
+                Mini-study: This photo of Joseph and his kayak was compressed into a small web-friendly webp using the magick command line tool. It's delivered via the recommended next/image component, which handles optimization, responiveness, lazy loading and CDN caching automatically. 
+              </figcaption>
+            </figure>
           </div>
         </section>
       </div>
