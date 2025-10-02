@@ -2,8 +2,16 @@
 
 This website is to document engineering efforts of Joseph Malicke, principal engineer. It is a working portfolio and learning tool. 
 
+## Getting started
+1. Install `nvm` and `nvm use 20`
+1. `ncu -u && bun i && bun dev`
+
+## Deployment
+1. Create a migration with `bun run payload migrate:create`
+1. Migrate to production with ` bun run payload:prod migrate`
+
 ## Tech Stack
-NextJS, Tailwind, PayloadCMS with Postgres. Hosting on Vercel. 
+NextJS, Tailwind, PayloadCMS with Postgres. Production environment is Vercel/Neon serverless database.
 
 ## Opinionated Recommendations
 
